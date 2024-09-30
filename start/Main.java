@@ -14,7 +14,7 @@ public class Main {
 
         // Задание 2
         var boxDog = dog + 4;
-        var boxCat = cat +4;
+        var boxCat = cat + 4;
         var boxPaper = paper + 4;
 
         System.out.println(boxDog);
@@ -73,6 +73,5 @@ public class Main {
         var totalMenWomen = totalMen + 94;
         var hoursPerson = totalHours / totalMenWomen;
         System.out.println("Если в компании работает " + totalMenWomen + " человек, то всего " + hoursPerson + " часа работы может быть поделено между сотрудниками");
-
     }
 }
