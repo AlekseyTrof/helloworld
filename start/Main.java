@@ -73,5 +73,6 @@ public class Main {
         var totalMenWomen = totalMen + 94;
         var hoursPerson = totalHours / totalMenWomen;
         System.out.println("Если в компании работает " + totalMenWomen + " человек, то всего " + hoursPerson + " часа работы может быть поделено между сотрудниками");
+
     }
 }
