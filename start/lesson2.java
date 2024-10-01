@@ -15,10 +15,11 @@ public class lesson2 {
         System.out.println(string);
 
         // task 2
+        // подобрать типы данных для значений
         float a = 27.12f;
         long b = 987678965549L;
         float c = 2.786f;
-        int d = 569;
+        short d = 569;
         short f = -159;
         int e = 27897;
         byte g = 67;
@@ -66,7 +67,7 @@ public class lesson2 {
 
         // task 6
         byte bananas = 5;
-        short milkMl = 2; // 200 мл
+        byte milkMl = 2; // 200 мл
         byte ice = 2;
         byte agg = 4;
         // переводим всё в граммы
