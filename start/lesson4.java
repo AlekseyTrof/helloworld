@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class lesson4 {
     public static void main(String[] args) {
 
@@ -10,42 +11,50 @@ public class lesson4 {
         - Для Android — «Установить версию приложения для Android по ссылке».
         Объявить переменную clientOS, которая равна 0 или 1 (0 — iOS, 1 — Android).
          */
-        byte clientOS = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите 0, если у вас IOS. " +
+                "Введите 1, если у вас Android: ");
+        int clientOS = scanner.nextInt();
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
-        System.out.println("");
 
         // task 2
         /*
         Теперь нужно знать не только операционную систему телефона, но и год его создания.
-        ПНаписать программу, которая выдает соответствующее сообщение клиенту при наличии двух условий.
+        Написать программу, которая выдает соответствующее сообщение клиенту при наличии двух условий.
         - Если год выпуска ранее 2015 года, то к сообщению об установке нужно добавить информацию об облегченной версии.
         - Для пользователей телефонов 2015 года выпуска и позже нужно вывести обычное предложение об установке приложения.
          */
-        byte clienTOS = 1;
-        int clientDeviceYear = 2016;
+        System.out.print("Введите 0, если у вас IOS. " +
+                "Введите 1, если у вас Android: ");
+        int clienTOS = scanner.nextInt();
+
+        System.out.print("Введите год выпуска вашего смартфона: ");
+        int clientDeviceYear = scanner.nextInt();
+
         if (clienTOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
             if (clientDeviceYear > 2015) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                System.out.println("Так же можете установить облегченную версию приложения для iOS по ссылке");
             }
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
             if (clientDeviceYear > 2015) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                System.out.println("Так же можете установить облегченную версию приложения для Android по ссылке");
             }
         }
-        System.out.println("");
 
         // task 3
         /*
         Написать программу, которая определяет, является ли год високосным или нет.
         Год должен быть больше, чем 1584 (в котором был введен високосный год).
          */
-        int year = 2055;
+        System.out.println("Давайте проверим високосный год или нет:)");
+        System.out.print("Введите любой год: ");
+        int year = scanner.nextInt();
 
         if (year >= 1584 &&
                 year % 4 == 0 &&
@@ -59,9 +68,8 @@ public class lesson4 {
         } else if (year < 1584) {
             System.out.println("Год должен быть больше, чем 1584 (в котором был введен високосный год)");
         } else {
-            System.out.println(year + " год не високосный");
+            System.out.println(year + " год - не високосный");
         }
-        System.out.println("");
 
         // task 4
         /*
@@ -75,20 +83,20 @@ public class lesson4 {
         - Свыше 100 км доставки нет.
         Написать программу, которая выдает сообщение в консоль: Потребуется _ дней для доставки.
          */
-        int deliveryDistance = 95;
+        System.out.print("Укажите дистанцию в км до адреса доставки: ");
+        int deliveryDistance = scanner.nextInt();
         byte dayDelivery = 1;
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется количество дней для доставки: " + dayDelivery);
-        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+        } else if (deliveryDistance <= 60) {
             dayDelivery += 1;
             System.out.println("Потребуется количество дней для доставки: " + dayDelivery);
-        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+        } else if (deliveryDistance <= 100) {
             dayDelivery += 2;
             System.out.println("Потребуется количество дней для доставки: " + dayDelivery);
         } else {
             System.out.println("Свыше 100 км доставки нет");
         }
-        System.out.println("");
 
         // task 5
         /*
@@ -96,7 +104,8 @@ public class lesson4 {
         к какому сезону этот месяц принадлежит. Например, 1-й месяц (он же январь) принадлежит к сезону зима.
         Прописать условие, при котором программа не будет выполняться (номер месяца больше 12).
          */
-        byte monthNumber = 12;
+        System.out.print("Введите номер месяца, что узнать к какому сезону этот месяц принадлежит: ");
+        byte monthNumber = scanner.nextByte();
         switch (monthNumber) {
             case 1:
             case 2:
