@@ -1,3 +1,5 @@
+package sryPro_course1;
+
 public class lesson6 {
     public static void main(String[] args) {
         // task 1

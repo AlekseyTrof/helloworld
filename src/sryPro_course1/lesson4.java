@@ -1,3 +1,5 @@
+package sryPro_course1;
+
 import java.util.Scanner;
 public class lesson4 {
     public static void main(String[] args) {

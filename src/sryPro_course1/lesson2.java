@@ -1,3 +1,5 @@
+package sryPro_course1;
+
 public class lesson2 {
     public static void main(String[] args) {
         // task 1
@@ -84,13 +86,13 @@ public class lesson2 {
         byte manWeight = 7;
         short lostWeightInDay1 = 250;
         short lostWeightInDay2= 500;
-        // перевем вес в граммы, сколько спортсмену нужно сбросить
+        // переведем вес в граммы, сколько спортсмену нужно сбросить
         int lostWeight = manWeight * 1000;
         // найдем сколько дней нужно если терять по 250 грамм в день
         int needDayLost1 = lostWeight / lostWeightInDay1;
         // найдем сколько дней нужно если терять по 500 грамм в день
         int needDayLost2 = lostWeight / lostWeightInDay2;
-        //найдем среднее количетсво дней, если заниматься умеренно
+        //найдем среднее количество дней, если заниматься умеренно
         int averageDatForLostWeight = (needDayLost1 + needDayLost2) / 2;
         System.out.println(needDayLost1 + " дней нужно, если скидывать по 250 гр в день");
         System.out.println(needDayLost2 + " дней нужно, если скидывать по 500 гр в день");

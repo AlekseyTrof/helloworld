@@ -1,3 +1,5 @@
+package sryPro_course1;
+
 import java.util.Arrays;
 public class lesson7 {
     public static void main(String[] args) {
