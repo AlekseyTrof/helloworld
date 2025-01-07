@@ -5,14 +5,14 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите первое число: ");
+        System.out.print("Введите первое число: ");
         double firstNumber = scanner.nextDouble();
 
-        System.out.println("Введите второе число: ");
-        double secondNumber = scanner.nextDouble();
-
-        System.out.println("Введите операцию(+, -, /, *: ");
+        System.out.print("Введите операцию(+, -, /, *): ");
         char operation = scanner.next().charAt(0);
+
+        System.out.print("Введите второе число: ");
+        double secondNumber = scanner.nextDouble();
         double result;
 
         switch (operation) {

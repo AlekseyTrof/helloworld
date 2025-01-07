@@ -1,4 +1,4 @@
-package lesson10;
+package sryPro_course1.lesson10;
 
 public class App {
     public static void main(String[] args) {
